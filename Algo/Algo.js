@@ -51,6 +51,11 @@ export default class Algo extends Sprite {
 
   *whenIReceiveWin() {
     this.visible = true;
+        this.sayAndWait(
+      "" + "Number of moves you made is " + this.stage.vars.moves,
+      2
+    );
+    this.sayAndWait("Minimum number of moves is 11!", 2);
   }
 
   *whenGreenFlagClicked() {
