@@ -37,7 +37,7 @@ export default class Birds extends Sprite {
     ];
   }
 
-  *whenbackdropswitchesto() {
+  *whenIReceiveResult() {
     this.goto(-4, 13);
     this.visible = true;
     yield* this.sayAndWait(
