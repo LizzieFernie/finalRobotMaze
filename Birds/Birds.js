@@ -63,10 +63,6 @@ export default class Birds extends Sprite {
     this.goto(-4, 13);
     this.visible = true;
 
-    this.sayAndWait(
-      "" + "Number of moves you made is " + this.stage.vars.moves,
-      2
-    );
-    this.sayAndWait("Minimum number of moves is 11!", 2);
+
   }
 }
