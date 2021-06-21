@@ -62,7 +62,7 @@ export default class Robot extends Sprite {
     this.stage.vars.moves += 1;
     this.y += 43;
     if (this.touching(Color.rgb(0, 0, 0))) {
-      this.y += -38.5;
+      this.y += -43;
     }
     if (this.touching(Color.rgb(143, 142, 128))) {
       yield* this.startSound("Drum Bass3");
@@ -79,7 +79,7 @@ export default class Robot extends Sprite {
     this.stage.vars.moves += 1;
     this.y += -43;
     if (this.touching(Color.rgb(0, 0, 0))) {
-      this.y += 37;
+      this.y += 43;
     }
     if (this.touching(Color.rgb(143, 142, 128))) {
       yield* this.startSound("Drum Bass3");
