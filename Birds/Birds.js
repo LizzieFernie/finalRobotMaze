@@ -64,8 +64,7 @@ export default class Birds extends Sprite {
     this.visible = true;
     yield* this.wait(1);
     this.goto(-4, -23);
-    yield* this.sayAndWait("You Win",2);
-
-
+    yield* this.sayAndWait("You made "+score+" moves",2);
+  yield* this.sayAndWait("Minimum number of moves is 11",2);
   }
 }
