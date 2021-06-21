@@ -14,7 +14,7 @@ export default class Robot2 extends Sprite {
     super(...args);
 
     this.costumes = [
-      new Costume("5x35n5", "./Robot2/costumes/5x35n5.svg", { x: 50, y: 50 })
+      new Costume("5x35n5", "./Robot2/costumes/5x35n5.svg", { x: 30, y: 50 })
     ];
 
     this.sounds = [
