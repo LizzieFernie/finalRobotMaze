@@ -94,11 +94,7 @@ export default class Robot extends Sprite {
 
   *whenIReceiveMoveleft() {
     this.stage.vars.moves += 1;
-    var canvas = document.getElementById("project");
-    var ctx = canvas.getContext("2d");
-    ctx.moveTo(0, 0);
-    ctx.lineTo(200, 100);
-    ctx.stroke();
+
     this.x += -43;
     if (this.touching(Color.rgb(0, 0, 0))) {
       this.x += 43;
